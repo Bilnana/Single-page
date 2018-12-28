@@ -1,0 +1,28 @@
+/* ==========================================================================
+   #FORMS
+   ========================================================================== */
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .form-header__control {
+    margin-bottom: 10px;
+    background-color: transparent;
+    height: 78px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 15px;
+    color: #fff;
+  }
+
+  .name,
+  .email {
+    width: calc((100% - 10px) / 2);
+  }
+
+  .phone,
+  .txtaria {
+    width: 100%;
+  }
+}

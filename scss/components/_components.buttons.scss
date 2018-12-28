@@ -1,0 +1,34 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+   .btn {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      border-radius: 2px;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-decoration: none;
+
+
+      &-submit {
+        background-color: $secondary-red;
+        transition: all 0.2s ease-in;
+
+        &-full-width {
+          width: 100%;
+        }
+
+        &-const-width {
+          max-width: 235px;
+          width: 100%;
+        }
+
+        &:hover {
+          background-color: darken($secondary-red, 5%)
+        }
+      }
+   }
