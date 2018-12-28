@@ -19,6 +19,7 @@ function isSmallDevice () {
 function swiper() {
 
   var swiper = new Swiper('.swiper-container', {
+    autoplay: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

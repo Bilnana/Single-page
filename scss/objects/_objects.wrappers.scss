@@ -16,33 +16,6 @@
   overflow-x: hidden;
 
   .injury-inner {
-    .image-wraper {
-      max-width: 528px;
-      width: 100%;
-      position: relative;
-
-      .circle-text {
-        max-width: 316px;
-        width: 100%;
-        height: 316px;
-        border-radius: 50%;
-        background-color: $blue-lioght;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 0 30px;
-        position: absolute;
-        bottom: -40px;
-        right: -200px;
-
-        h4 {
-          color: #fff;
-          font-size: 32px;
-          font-weight: 500;
-        }
-      }
-    }
-
     .text-wraper {
       display: flex;
       justify-content: center;
@@ -67,8 +40,33 @@
       }
     }
   }
+}
 
- 
+.image-wraper {
+  max-width: 528px;
+  width: 100%;
+  position: relative;
+
+  .circle-text {
+    max-width: 316px;
+    width: 100%;
+    height: 316px;
+    border-radius: 50%;
+    background-color: $blue-light;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 30px;
+    position: absolute;
+    bottom: -40px;
+    right: -200px;
+
+    h4 {
+      color: #fff;
+      font-size: 32px;
+      font-weight: 500;
+    }
+  }
 }
 
 .questions {
@@ -154,4 +152,42 @@
       margin-top: 45px;
     }
   }
+}
+
+.clients {
+  padding: 134px 0;
+  background-image: url('../../img/beach.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $primary-blue;
+  background-attachment: fixed;
+
+  .text-wraper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .text {
+      color: #fff;
+
+      h3 {
+        color: #a2c4ff;
+        font-weight: 300;
+      }
+
+      h1 {
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+.coffecup {
+  img {
+    height: auto;
+    width: auto;
+  }
+
 }

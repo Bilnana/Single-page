@@ -19,24 +19,3 @@ p {
     width: auto;
   }
 }
-
-
-.slider-wraper {
-  position: relative;
-}
-
-.slider-comments {
-  position: absolute;
-  top: 0;
-  max-width: 520px;
-  width: 100%;
-
-
-
-  .slider-item {
-    .client-image {
-      width: 135px;
-      height: 135px;
-    }
-  }
-}

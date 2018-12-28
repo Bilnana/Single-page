@@ -1,0 +1,49 @@
+/* ==========================================================================
+   #SHAAPES
+   ========================================================================== */
+.slider-wraper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.slider-background {
+  position: relative;
+  max-width: 528px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.slider-comments {
+  position: absolute;
+  max-width: 520px;
+  width: 100%;
+  padding: 0 50px;
+
+  .slider-item {
+    text-align: center;
+    color: #ffff;
+    width: 100%;
+    
+    quotes {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 33px;
+    }
+
+    p {
+      margin-top: 43px;
+    }
+    
+    .client-image {
+      width: 135px;
+      height: 135px;
+      position: absolute;
+      bottom: -120px;
+      left: 30px;
+    }
+  }
+}
