@@ -1,3 +1,60 @@
 /* ==========================================================================
    #FOOTER
    ========================================================================== */
+.footer {
+  background-image: url('../../img/footer-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $primary-blue;
+
+  .footer-inner {
+    padding: 119px 15px;
+
+    h5 {
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    h5,
+    p {
+      margin-bottom: 50px;
+    }
+
+    .phone {
+      color: $primary-red;
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    .adress {
+      position: relative;
+      padding-left: 30px;
+
+      &::before {
+        content: '';
+        width: 23px;
+        height: 37px;
+        background-image: url('../../img/location.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  .fotter-bottom {
+    color: #485c7c;
+
+    .footer-bottom__inner {
+      border-top: 1.5px solid #485c7c;
+      opacity: 0.8;
+      text-align: center;
+      padding: 38px 0;
+    }
+  }
+}

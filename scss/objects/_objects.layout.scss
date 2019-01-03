@@ -19,3 +19,18 @@ p {
     width: auto;
   }
 }
+
+.text-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+}

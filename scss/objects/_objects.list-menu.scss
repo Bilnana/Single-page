@@ -4,6 +4,10 @@
 .main-menu {
   display: flex;
 
+  @include mq(to768) {
+    display: none;
+  }
+
   &__item {
     padding: 15px 16px;
     position: relative;

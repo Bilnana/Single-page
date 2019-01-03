@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   isSmallDevice ();
   swiper();
+  questions();
 });
 
 /* Window width on small devices */
@@ -18,13 +19,22 @@ function isSmallDevice () {
 
 function swiper() {
 
-  var swiper = new Swiper('.swiper-container', {
+  var swiperQuptes = new Swiper('.slider-comments__inner ', {
+    autoplay: true
+  });
+
+  var swiperResults = new Swiper('.slider-results__inner', {
     autoplay: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
     },
   });
+}
+  
+function questions() {
+  // var imgUrl = $('.questions').find('img').attr('src');
+  // console.log(imgUrl);
 }
 
 
