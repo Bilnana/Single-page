@@ -2,19 +2,7 @@
    #BANNER
    ========================================================================== */
 .banner {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  @include mq(to768) {
-    flex-direction: column;
-  }
-
-  &__form,
-  &__text {
-    max-width: 320px;
-    width: 100%;
-  }
 
   &__form {
     h4 {
@@ -34,6 +22,10 @@
 
   &__text {
 
+    @include mq(to1200) {
+      text-align: center;
+    }
+
     h1 {
       color: $primary-blue;
       font-weight: 500;
@@ -52,21 +44,35 @@
   }
 
   &__image {
-    // border: 20px solid rgba(194, 215, 232, 0.4);
-    // border-radius: 50%;
     position: relative;
+    max-width: 528px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mq(to1200) {
+      margin: 50px auto;
+    }
+
+    img {
+      z-index: 5;
+    }
 
     &::before {
       content: '';
       width: calc(100% + 40px);
-      height: 82.5%;
+      height: calc(77% + 40px);
       background-color: transparent;
       border: 20px solid rgba(194, 215, 232, 0.4);
       border-radius: 50%;
       position: absolute;
-      left: -20px;
-      right: -20;
-      top: calc((25% / 2) - 20px);
+      transform: translateY(8px);
+      z-index: 1;
+
+      @include mq(to768) {
+        transform: translateY(4px);
+      }
     }
   }
 }

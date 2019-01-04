@@ -19,40 +19,48 @@
   <div class="banner-wraper">
     <header class="container">
       <div class="header">
-        <div class="logo">
+        <div class="header-logo">
           <img src="img/logo.png" alt="Site logo">
         </div>
-        <ul class="main-menu">
-          <li class="main-menu__item"><a href="#">Home</a></li>
-          <li class="main-menu__item"><a href="#">Attorney</a></li>
-          <li class="main-menu__item"><a href="#">Profile</a></li>
-          <li class="main-menu__item"><a href="#">Case Results</a></li>
-          <li class="main-menu__item"><a href="#">Testimonials</a></li>
-          <li class="main-menu__item"><a href="#">Contact</a></li>
+        <ul class="header-menu">
+          <li class="header-menu__item"><a href="#">Home</a></li>
+          <li class="header-menu__item"><a href="#">Attorney</a></li>
+          <li class="header-menu__item"><a href="#">Profile</a></li>
+          <li class="header-menu__item"><a href="#">Case Results</a></li>
+          <li class="header-menu__item"><a href="#">Testimonials</a></li>
+          <li class="header-menu__item"><a href="#">Contact</a></li>
         </ul>
-        <div class="header__contact">
+        <div class="header-contact">
           <p class="phone"><span class="icon-phone"></span>(888) 333-4567</p>
         </div>
       </div>
-      <div class="banner">
-        <div class="banner__text">
-          <h3>Hurt on a Scooter?</h3>
-          <h1>Call Paul</h1>
-          <p>Lorem ipsum dolor set</p>
-        </div>
-        <div class="banner__image">
-          <img src="img/roller.png" alt="Activity">
-        </div>
-        <div class="banner__form">
-          <h4>Free Consultation</h4>
-          <p>Get the highest compensation for your injury!</p>
-          <form class="form-header">
-            <input type="text" name="name" value="Name" class="form-header__control name">
-            <input type="email" name="email" value="E-mail" class="form-header__control email">
-            <input type="phone" name="phone" value="Phone number" class="form-header__control phone">
-            <textarea class="form-header__control txtaria">Tell Us About Your Scooter Accident</textarea>
-            <a href="#" class="btn btn-submit btn-submit-full-width margin-t">Submit</a>
-          </form>
+      <div class="container">
+        <div class="banner row">
+            <div class="col-md-12 col-lg-12 col-xl-3">
+              <div class="banner__text">
+                  <h3>Hurt on a Scooter?</h3>
+                  <h1>Call Paul</h1>
+                  <p>Lorem ipsum dolor set</p>
+              </div>
+              </div>
+              <div class="col-md-12 col-lg-6 col-xl-6">
+                <div class="banner__image">
+                  <img src="img/roller.png" alt="Activity">
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6 col-xl-3">
+                <div class="banner__form">
+                    <h4>Free Consultation</h4>
+                    <p>Get the highest compensation for your injury!</p>
+                    <form class="form-header">
+                      <input type="text" name="name" placeholder="Name" class="form-header__control name">
+                      <input type="email" name="email" placeholder="E-mail" class="form-header__control email">
+                      <input type="phone" name="phone" placeholder="Phone number" class="form-header__control phone">
+                      <textarea class="txtaria" placeholder="Tell Us About Your Scooter Acciden"></textarea>
+                      <a href="#" class="btn btn-submit btn-submit-full-width margin-t">Submit</a>
+                    </form>
+                </div>
+              </div>
         </div>
       </div>
     </header>
@@ -60,7 +68,7 @@
   <section class="injury">
     <div class="injury-inner container">
       <div class="row">
-        <div class="column col-xs-12 col-sm-12 col-md-6 col-xl-6">
+        <div class="col-md-12 col-lg-8 col-xl-6">
           <div class="image-wraper">
             <img src="img/injury.png" alt="injury">
             <div class="circle-text">
@@ -68,7 +76,7 @@
             </div>
           </div>
         </div>
-        <div class="text-wraper col-xs-12 col-sm-12 col-md-6 col-xl-6">
+        <div class="text-wraper col-md-12 col-lg-4 col-xl-6">
           <div class="text">
             <h2>Get Free Legal Help for Your Injury</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud.</p>
@@ -81,9 +89,9 @@
     </div>
   </section>
   <section class="questions">
-    <div class="questions-inner row">
-      <div class="questions__box box-1 col-xs-12 col-md-3">
-        <img src="img/questions1.png" alt="Questions image sport">
+    <div class="questions-inner container-fluid">
+    <div class="row">
+      <div class="questions__box box-1 col-xs-12 col-sm-12 col-lg-6 col-xl-3">
         <div class="text-center">
           <h3 class="text-center">How much is my case worth?</h3>
           <p class="description">After being involved in an accident, people often asked themselves, how much my scooter accident case is worth and what can I claim 
@@ -92,8 +100,7 @@
             Overett Law Group.</p>
         </div>
       </div>
-      <div class="questions__box box-2 col-xs-12 col-md-3">
-        <img src="img/questions2.png" alt="Questions image sport">
+      <div class="questions__box box-2 col-xs-12 col-sm-12 col-lg-6 col-xl-3">
         <div class="text-center">
           <h3 class="text-center">After?</h3>
           <p class="description">After being involved in an accident, people often asked themselves, how much my scooter accident case is worth and what can I claim 
@@ -102,18 +109,16 @@
               Overett Law Group.</p>
         </div>
       </div>
-      <div class="questions__box box-3 col-xs-12 col-md-3">
-        <img src="img/questions3.png" alt="Questions image sport">
+      <div class="questions__box box-3 col-xs-12 col-sm-12 col-lg-6 col-xl-3">
         <div class="text-center">
           <h3 class="text-center">What’s my next step?</h3>
           <p class="description">After being involved in an accident, people often asked themselves, how much my scooter accident case is worth and what can I claim 
               compensation for? You may be able to claim compensation for pain and suffering, property damage, loss wages, medical expenses and more.
               To maximize the amount recovered, we recommend being legally represented by a firm with experience like the 
               Overett Law Group.</p>
-          </div>
+        </div>
       </div>
-      <div class="questions__box box-4 col-xs-12 col-md-3">
-          <img src="img/questions4.png" alt="Questions image sport">
+      <div class="questions__box box-4 col-xs-12 col-sm-12 col-lg-6 col-xl-3">
           <div class="text-center">
             <h3 class="text-center">How much do you cost??</h3>
             <p class="description">After being involved in an accident, people often asked themselves, how much my scooter accident case is worth and what can I claim 
@@ -123,6 +128,7 @@
           </div>
       </div>
     </div>
+  </div>
   </section>
   <section class="help">
     <div class="help-inner">
@@ -144,13 +150,13 @@
   <section class="clients">
     <div class="clients-inner container">
       <div class="row">
-        <div class="text-wraper col-xs-12 col-sm-12 col-md-6">
+        <div class="text-wraper col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="text">
               <h3>1000’s of happy clients</h3>
               <h1>Hear from Our Clients</h1>
           </div>
         </div>
-        <div class="slider-wraper col-xs-12 col-sm-12 col-md-6">
+        <div class="slider-wraper col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="slider-background">
             <img src="img/blue-circle-slider.png">
             <div class="slider-comments">
@@ -204,16 +210,15 @@
     </div>
     <div class="coffecup-inner container">
       <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="col-md-12 col-lg-8 col-xl-6">
             <div class="image-wraper">
-              <img src="img/paul.png" class="paul-img" alt="Paul coffe">
-              <img src="img/blue-circle-slider.png" class="blue-img" alt="Blue circle">
+              <img src="img/coffe-paul.png" class="blue-img" alt="Coffe paul">
               <div class="circle-text">
                 <h4>Living and serving Long Beach for over 20 years.</h4>
               </div>
             </div>
           </div>
-          <div class="text-wraper col-xs-12 col-sm-12 col-md-6">
+          <div class="text-wraper col-md-12 col-lg-4 col-xl-6">
             <div class="blue-t small pos6">
               <img src="img/blue_transparent_circle.png" alt="Blue circle">
             </div>
@@ -229,7 +234,7 @@
   <section class="results">
     <div class="results-inner container">
       <div class="row">
-        <div class="text-wraper col-xs-12 col-sm-12 col-md-6">
+        <div class="text-wraper col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="text">
             <h1>Proven Results</h1>
           </div>
@@ -237,7 +242,7 @@
             <img src="img/blue_transparent_circle.png" alt="Blue circle">
           </div>
         </div>
-        <div class="slider-wraper col-xs-12 col-sm-12 col-md-6">
+        <div class="slider-wraper col-xs-12 col-sm-12 col-md-12 col-lg-6">
             <div class="slider-background">
               <img src="img/purple-circle.png">
               <div class="slider-results">
@@ -272,22 +277,27 @@
   <section class="footer">
     <div class="footer-inner container">
       <div class="row">
-          <div class="text-left col-xs-12 col-sm-12 col-md-4">
+          <div class="footer-column col-xs-12 col-sm-12 col-md-4">
             <div class="logo">
               <img src="img/logo.png" alt="Logo">
             </div>
           </div>
-          <div class="text-center col-xs-12 col-sm-12 col-md-4">
+          <div class="footer-column col-xs-12 col-sm-12 col-md-4">
             <div class="contact">
               <h5>Contact us</h5>
               <p class="phone"><span class="icon-phone"></span>(888) 333-4567</p>
-              <p class="adress">3633 E Broadway Suite 100 Long Beach, CA 90803 </p>
+              <p class="adress"><span class="icon-location"></span>3633 E Broadway Suite 100 Long Beach, CA 90803 </p>
             </div>
           </div>
-          <div class="text-right col-xs-12 col-sm-12 col-md-4">
+          <div class="footer-column col-xs-12 col-sm-12 col-md-4">
             <div class="social">
               <h5>Follow us on</h5>
-              <p></p>
+              <ul class="social-list">
+                <li class="social-list__item"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="social-list__item"><a href="#"><span class="icon-google-plus"></span></a></li>
+                <li class="social-list__item"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="social-list__item"><a href="#"><span class="icon-linkedin"></span></a</li>
+              </ul>
             </div>
           </div>
       </div>

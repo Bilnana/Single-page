@@ -7,13 +7,23 @@
   flex-wrap: wrap;
 
   .form-header__control {
+    height: 48px;
+  }
+
+  .form-header__control,
+  .txtaria {
     margin-bottom: 10px;
     background-color: transparent;
-    height: 78px;
     border-radius: 2px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px 15px;
     color: #fff;
+  }
+
+  ::placeholder {
+    color: #94b0dd;
+    font-size: 16px;
+    font-weight: 300;
   }
 
   .name,

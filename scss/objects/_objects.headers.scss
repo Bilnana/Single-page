@@ -6,9 +6,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
+  flex-wrap: wrap;
 
-  &__contact {
+  &-logo {
+    @include mq(from768to1200) {
+      order: 1;
+    }
+  }
+
+  &-contact {
     cursor: pointer;
+
+    @include mq(from768to1200) {
+      order: 2;
+    }
     
     .phone {
       font-size: 28px;
@@ -16,6 +27,13 @@
       color: $primary-red;
       display: flex;
       align-items: center;
+    }
+  }
+
+  &-menu {
+    @include mq(from768to1200) {
+      order: 3;
+      width: 100%;
     }
   }
 }

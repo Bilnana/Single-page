@@ -24,7 +24,11 @@ h1 {
   @include inuit-font-size($inuit-font-size-h1);
 
   @include mq(to768) {
-    font-size: 28px;
+    font-size: 32px;
+  }
+
+  @include mq(from768to1200) {
+    font-size: 72px;
   }
 }
 
@@ -32,7 +36,7 @@ h2 {
   @include inuit-font-size($inuit-font-size-h2);
 
   @include mq(to768) {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 

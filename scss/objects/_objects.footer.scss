@@ -13,6 +13,7 @@
 
     h5 {
       color: #fff;
+      text-transform: uppercase;
     }
 
     p {
@@ -25,24 +26,31 @@
     }
 
     .phone {
-      color: $primary-red;
       font-size: 28px;
-      font-weight: 400;
+      color: $primary-red;
     }
 
+    .phone,
     .adress {
-      position: relative;
-      padding-left: 30px;
+      display: flex;
+      align-items: center;
+    }
 
-      &::before {
-        content: '';
-        width: 23px;
-        height: 37px;
-        background-image: url('../../img/location.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        position: absolute;
-        left: 0;
+    .icon-phone,
+    .icon-location {
+      font-size: 28px;
+      font-weight: 400;
+      margin-right: 8px;
+    }
+
+    .social,
+    .contact,
+    .logo {
+      max-width: 250px;
+      width: 100%;
+
+      @include mq(to768) {
+        margin: 30px auto 0 auto;
       }
     }
   }

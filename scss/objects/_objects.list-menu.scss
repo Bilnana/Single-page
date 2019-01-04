@@ -1,17 +1,26 @@
 /* ==========================================================================
    #LIST MENU
    ========================================================================== */
-.main-menu {
+.header-menu {
   display: flex;
 
   @include mq(to768) {
     display: none;
   }
 
+  @include mq(from768to1200) {
+    background-color: rgba(194, 215, 232, 0.4);
+    justify-content: center;
+  }
+
   &__item {
     padding: 15px 16px;
     position: relative;
     cursor: pointer;
+
+    @include mq(from768to1200) {
+      padding: 15px 10px;
+    }
 
     &::after {
       content: '';
