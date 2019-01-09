@@ -6,11 +6,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  .form-header__control {
+  &__control {
     height: 48px;
   }
 
-  .form-header__control,
+  &__control,
   .txtaria {
     margin-bottom: 10px;
     background-color: transparent;

@@ -24,7 +24,7 @@
   }
 
   @elseif $media == to1024 {
-    @media only screen and (max-width: 1023px) { @content; }
+    @media only screen and (max-width: 1024px) { @content; }
   }
 
   @elseif $media == to992 {
@@ -32,7 +32,7 @@
   }
 
   @elseif $media == to768 {
-    @media only screen and (max-width: 768px) { @content; }
+    @media only screen and (max-width: 767.9px) { @content; }
   }
 
   @elseif $media == to550 {
@@ -58,7 +58,7 @@
   }
 
   @elseif $media == from768to1024 {
-    @media only screen and (min-width: 767px) and (max-width: 1023px) { @content; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) { @content; }
   }
 
   @elseif $media == from768to1200 {
@@ -66,7 +66,7 @@
   }
 
   @elseif $media == from768to1380 {
-    @media only screen and (min-width: 767px) and (max-width: 1379px) { @content; }
+    @media only screen and (min-width: 768px) and (max-width: 1379px) { @content; }
   }
 
   @elseif $media == from550to992 {

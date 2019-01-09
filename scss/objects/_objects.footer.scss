@@ -8,7 +8,7 @@
   background-position: center;
   background-color: $primary-blue;
 
-  .footer-inner {
+  &-top {
     padding: 119px 15px;
 
     h5 {
@@ -25,12 +25,6 @@
       margin-bottom: 50px;
     }
 
-    .phone {
-      font-size: 28px;
-      color: $primary-red;
-    }
-
-    .phone,
     .adress {
       display: flex;
       align-items: center;
@@ -55,14 +49,54 @@
     }
   }
 
-  .fotter-bottom {
-    color: #485c7c;
+  &-column2 {
+    display: flex;
+    justify-content: center; //Align items in footer desktop versions, design.
+  }
 
-    .footer-bottom__inner {
+  &-column3 {
+    display: flex;
+    justify-content: flex-end; //Align items in footer desktop versions, design.
+  }
+
+  &-bottom {
+
+    &__inner {
       border-top: 1.5px solid #485c7c;
       opacity: 0.8;
       text-align: center;
-      padding: 38px 0;
+      padding: 18px 0 38px;
+
+      .content {
+        a {
+          color: #485c7c;
+          position: relative;
+          padding-left: 10px;
+          margin-right: 10px;
+
+          &::before {
+            content: '';
+            width: 2px;
+            height: 80%;
+            background-color: #485c7c;
+            position: absolute;
+            bottom:0;
+            left: 0;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:first-child {
+            padding-left: 0;
+
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
     }
   }
 }

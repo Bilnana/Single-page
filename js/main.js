@@ -1,24 +1,10 @@
 $( document ).ready(function() {
-  isSmallDevice ();
   swiper();
-  questions();
+  responsiveNavigation();
+  navToggleTriger();
 });
 
-/* Window width on small devices */
-function isSmallDevice () {
-  var width = $(window).width();
-
-  if (width <= 1200) {
-    $('body').addClass('s-device')
-  }
-  else {
-    $('body').addClass('b-device')
-  }
-}
-
-
 function swiper() {
-
   var swiperQuptes = new Swiper('.slider-comments__inner ', {
     autoplay: true
   });
@@ -31,10 +17,20 @@ function swiper() {
     },
   });
 }
-  
-function questions() {
-  // var imgUrl = $('.questions').find('img').attr('src');
-  // console.log(imgUrl);
+
+function responsiveNavigation() {
+  var wWidth = $(window).width();
+    if (wWidth <= 1024) {
+      $('.nav-toggle').removeClass('hidden');
+      $('body').removeClass('desktop').addClass('smallDevices');
+    } else {
+      $('.nav-toggle').addClass('hidden');
+      $('body').removeClass('smallDevices').addClass('desktop');
+    }
 }
 
-
+function navToggleTriger () {
+  $('.nav-toggle').on('click', function () {
+    $('.header-menu').toggleClass('open');
+  });
+}

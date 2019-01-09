@@ -4,13 +4,34 @@
 .header-menu {
   display: flex;
 
-  @include mq(to768) {
-    display: none;
+  @include mq(to1024) {
+    flex-direction: column;
+    position: absolute;
+    top: 129px;
+    left: 0;
+    right: 0;
+    background-color: $primary-blue;
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 10px 20px 0 rgba(#000, 0.2);
+    z-index: 10;
+    transition: all 0.3 ease-in;
   }
 
-  @include mq(from768to1200) {
-    background-color: rgba(194, 215, 232, 0.4);
-    justify-content: center;
+  &.open {
+    visibility: visible;
+    //height: calc(100% - 200px);
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .desktop & {
+    &:hover::before {
+      opacity: 1;
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
   }
 
   &__item {
@@ -18,8 +39,11 @@
     position: relative;
     cursor: pointer;
 
-    @include mq(from768to1200) {
-      padding: 15px 10px;
+    @include mq(to1024) {
+      padding: 25px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &::after {
@@ -36,11 +60,16 @@
 
     a {
       color: $link-color;
-      font-weight: 400;
+      font-weight: 500;
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: 2.1px;
       transition: all 0.3s ease-in;
+
+      @include mq(to1200) {
+        font-size: 22px;
+        color: #fff;
+      }
     }
 
     &:hover {

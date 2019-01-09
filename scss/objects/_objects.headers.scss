@@ -8,32 +8,49 @@
   padding: 30px 0;
   flex-wrap: wrap;
 
-  &-logo {
-    @include mq(from768to1200) {
-      order: 1;
-    }
-  }
-
   &-contact {
-    cursor: pointer;
 
-    @include mq(from768to1200) {
-      order: 2;
+    @include mq(to1024) {
+      order: 1;
+      width: 100%;
     }
-    
+
     .phone {
-      font-size: 28px;
-      font-weight: 300;
-      color: $primary-red;
-      display: flex;
-      align-items: center;
+
+      @include mq(to1024) {
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+          font-size: 22px;
+        }
+      }
+
+      .icon-phone {
+        margin-right: 8px;
+      }
     }
   }
 
   &-menu {
-    @include mq(from768to1200) {
+   
+  }
+
+  .logo {
+    @include mq(to1024) {
+      order: 2;
+    }
+
+    img {
+      @include mq(to1024) {
+        width: 100%;
+      }
+    }
+  }
+
+  .nav-toggle {
+    @include mq(to1024) {
       order: 3;
-      width: 100%;
     }
   }
 }

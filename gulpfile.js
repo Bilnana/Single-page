@@ -19,7 +19,7 @@ let gulpStylelint = require('gulp-stylelint');
 let uglify = require('gulp-uglify-es').default;
 let eslint = require('gulp-eslint');
 let babel = require('gulp-babel');
-//let minify = require('gulp-js-minify');
+let minify = require('gulp-js-minify');
 
 // postcss
 let postcss = require('gulp-postcss');
@@ -101,17 +101,16 @@ gulp.task('css-lint', function() {
 ========================================================================== */
 gulp.task('scripts', function() {
   return gulp.src([
-      './js/slick.min.js',
-      './js/chosen.jquery.min.js',
-      './js/jquery.mousewheel.js',
-      './js/jquery.mCustomScrollbar.js',
+    './js/plugins/jquery.min.js',
+      './js/plugins/swiper.min.js',
       './js/main.js'
     ])
     //.pipe(minifyjs())
     .pipe(concat('scripts.min.js'))
-    .pipe(babel({
-      presets: ['env']
-    }))
+   // .pipe(babel({
+    //   presets: ['env']
+    // }))
+    //.pipe(minify())
     .pipe(gulp.dest('./dest/js'))
 })
 

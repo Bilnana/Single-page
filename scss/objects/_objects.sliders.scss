@@ -7,7 +7,7 @@
   justify-content: flex-end;
   align-items: center;
 
-  @include mq(to768) {
+  @include mq(to992) {
     justify-content: center;
   }
 }

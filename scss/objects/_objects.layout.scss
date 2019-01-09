@@ -3,7 +3,7 @@
 //    ========================================================================== */
 body {
   margin: 0;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'BarlowCondensed';
 }
 
 p {
@@ -15,22 +15,17 @@ p {
 }
 
 .logo {
+
+  @include mq(to768) {
+    width: 135px;
+  }
+
   img {
     width: auto;
   }
 }
 
-.text-left {
-  display: flex;
-  justify-content: flex-start;
+.hidden {
+  display: none;
 }
 
-.text-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.text-center {
-  display: flex;
-  justify-content: center;
-}
